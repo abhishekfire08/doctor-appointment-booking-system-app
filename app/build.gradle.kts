@@ -3,6 +3,9 @@ plugins {
 }
 
 android {
+    buildFeatures{
+        viewBinding=true
+    }
     namespace = "com.example.doctor_appointment_booking_system"
     compileSdk {
         version = release(36) {
