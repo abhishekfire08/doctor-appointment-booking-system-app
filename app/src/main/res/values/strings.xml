@@ -29,4 +29,5 @@
     <string name="write_review">Write a review</string>
     <string name="submit">Submit</string>
     <string name="upload_report">Upload Report</string>
+    <string name="select_date_of_birth">Select Date of Birth</string>
 </resources>

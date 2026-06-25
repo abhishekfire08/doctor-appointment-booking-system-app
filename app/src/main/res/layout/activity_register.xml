@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
@@ -11,6 +12,7 @@
         android:orientation="vertical"
         android:padding="28dp">
 
+        <!-- Title -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -20,6 +22,7 @@
             android:textStyle="bold"
             android:layout_marginBottom="24dp" />
 
+        <!-- Full Name -->
         <EditText
             android:id="@+id/etFullName"
             android:layout_width="match_parent"
@@ -29,6 +32,7 @@
             android:background="@drawable/bg_input"
             android:layout_marginBottom="12dp" />
 
+        <!-- Email -->
         <EditText
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
@@ -39,6 +43,7 @@
             android:background="@drawable/bg_input"
             android:layout_marginBottom="12dp" />
 
+        <!-- Mobile -->
         <EditText
             android:id="@+id/etMobile"
             android:layout_width="match_parent"
@@ -49,6 +54,7 @@
             android:background="@drawable/bg_input"
             android:layout_marginBottom="12dp" />
 
+        <!-- Password -->
         <EditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
@@ -59,23 +65,74 @@
             android:background="@drawable/bg_input"
             android:layout_marginBottom="12dp" />
 
-        <Spinner
-            android:id="@+id/spinnerGender"
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:background="@drawable/bg_input"
-            android:layout_marginBottom="12dp" />
+        <!-- Gender -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:layout_marginBottom="6dp"/>
 
-        <EditText
-            android:id="@+id/etDob"
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                android:text="Male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:text="Female"
+                android:layout_marginStart="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/rbOther"
+                android:text="Other"
+                android:layout_marginStart="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <!-- DOB -->
+        <LinearLayout
+            android:id="@+id/dobContainer"
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            android:hint="@string/dob"
-            android:focusable="false"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_input"
             android:paddingHorizontal="16dp"
-            android:background="@drawable/bg_input"
-            android:layout_marginBottom="20dp" />
+            android:layout_marginBottom="20dp">
 
+            <TextView
+                android:id="@+id/tvDob"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/select_date_of_birth"
+                android:clickable="true"
+                android:focusable="false"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:id="@+id/ivCalendar"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_calendar"
+                android:contentDescription="@string/select_date" />
+        </LinearLayout>
+
+        <!-- Register -->
         <Button
             android:id="@+id/btnRegister"
             android:layout_width="match_parent"
@@ -83,17 +140,18 @@
             android:background="@drawable/bg_rounded_button"
             android:text="@string/register"
             android:textColor="@color/white"
-            android:textStyle="bold"
-            android:gravity="center" />
+            android:textStyle="bold" />
 
+        <!-- Progress -->
         <ProgressBar
             android:id="@+id/progressRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:layout_gravity="center"
-            android:visibility="gone" />
+            android:layout_marginTop="16dp"
+            android:visibility="gone"/>
 
+        <!-- Login -->
         <TextView
             android:id="@+id/tvGoToLogin"
             android:layout_width="wrap_content"
@@ -101,6 +159,7 @@
             android:layout_gravity="center"
             android:text="@string/already_have_account"
             android:textColor="@color/text_secondary"
-            android:padding="16dp" />
+            android:padding="16dp"/>
+
     </LinearLayout>
 </ScrollView>
