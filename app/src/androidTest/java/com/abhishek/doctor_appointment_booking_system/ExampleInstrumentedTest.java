@@ -1,4 +1,4 @@
-package com.example.doctor_appointment_booking_system;
+package com.abhishek.doctor_appointment_booking_system;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.doctor_appointment_booking_system", appContext.getPackageName());
+        assertEquals("com.abhishek.doctor_appointment_booking_system", appContext.getPackageName());
     }
 }

@@ -1,11 +1,10 @@
-package com.example.doctor_appointment_booking_system;
+package com.abhishek.doctor_appointment_booking_system;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;

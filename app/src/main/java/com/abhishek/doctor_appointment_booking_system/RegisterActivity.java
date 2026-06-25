@@ -1,4 +1,4 @@
-package com.example.doctor_appointment_booking_system;
+package com.abhishek.doctor_appointment_booking_system;
 
 import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;

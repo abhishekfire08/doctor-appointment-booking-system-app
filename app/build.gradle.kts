@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.doctor_appointment_booking_system"
+    namespace = "com.abhishek.doctor_appointment_booking_system"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.doctor_appointment_booking_system"
+        applicationId = "com.abhishek.doctor_appointment_booking_system"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
